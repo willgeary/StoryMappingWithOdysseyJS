@@ -8,12 +8,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
-  <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+  <link rel="icon" type="image/x-icon" href="https://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+  <link rel="icon" type="image/png" href="https://cartodb.github.io/odyssey.js/sandbox/favicon.png">
 
-  <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
-  <link rel="stylesheet" href="http://cartodb.github.io/odyssey.js/sandbox/css/scroll.css">
-  <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
+  <link rel="stylesheet" href="https://cartodb.github.io/odyssey.js/sandbox/css/scroll.css">
+  <script src="https://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
   <div id="layout">
@@ -37,13 +37,13 @@
     </span></span></div>
   </div> <!-- layout -->
 
-  <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
-  <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
+  <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+  <script src="https://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
 
   <script>
     O.Template({
       init: function() {
-        var baseurl = this.baseurl = 'http://{s}.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
+        var baseurl = this.baseurl = 'https://{s}.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
         var map = this.map = L.map('map',{
           center: [0, 0],
           zoom: 4
@@ -73,12 +73,12 @@
         this.story.clear();
 
         if (this.baseurl && (this.baseurl !== actions.global.baseurl)) {
-          this.baseurl = actions.global.baseurl || 'http://0.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
+          this.baseurl = actions.global.baseurl || 'https://0.api.cartocdn.com/base-light/{z}/{x}/{y}.png';
 
           this.basemap.setUrl(this.baseurl);
         }
 
-        if (this.cartoDBLayer && ("http://"+self.cartoDBLayer.options.user_name+".cartodb.com/api/v2/viz/"+self.cartoDBLayer.options.layer_definition.stat_tag+"/viz.json" !== actions.global.vizjson)) {
+        if (this.cartoDBLayer && ("https://"+self.cartoDBLayer.options.user_name+".cartodb.com/api/v2/viz/"+self.cartoDBLayer.options.layer_definition.stat_tag+"/viz.json" !== actions.global.vizjson)) {
           this.map.removeLayer(this.cartoDBLayer);
 
           this.cartoDBLayer = null;
@@ -209,7 +209,7 @@ Then add here the description for your slide so it's shown on the left side box.
 L.marker([40.7348, -73.9970]).actions.addRemove(S.map)
 ```
 
-By adding new [Markdown] (http://daringfireball.net/projects/markdown/]) h1 elements (#) you add new states to your story.
+By adding new [Markdown] (https://daringfireball.net/projects/markdown/]) h1 elements (#) you add new states to your story.
 
 
 #Adding images to your story
@@ -220,7 +220,7 @@ By adding new [Markdown] (http://daringfireball.net/projects/markdown/]) h1 elem
 
 By default, images are also supported. 
 
-![New York](http://www.boston-discovery-guide.com/image-files/new-york-1.jpg)
+![New York](https://www.boston-discovery-guide.com/image-files/new-york-1.jpg)
 
 #Exporting your story
 ```
